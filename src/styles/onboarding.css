@@ -1,0 +1,51 @@
+.onboarding {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.slide img {
+  width: 100%;
+  max-width: 317px;
+}
+.slide h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 18px;
+}
+.slide p {
+  font-weight: 500;
+  color: #6a6f7d;
+  margin-bottom: 40px;
+}
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #2ecc71;
+}
+
+.onboarding-btn {
+  background: #2ecc71;
+  border: none;
+  padding: 14px 120px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 50px;
+}
