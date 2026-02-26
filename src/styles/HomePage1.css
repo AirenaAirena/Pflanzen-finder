@@ -5,8 +5,8 @@
 .home-header {
   background-image: url('../assets/img/heder-green.svg');
   color: white;
-  padding: 30px 20px;
-  /* border-radius: 20px; */
+  padding: 2.5rem 1rem;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;

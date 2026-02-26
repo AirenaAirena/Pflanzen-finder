@@ -1,6 +1,4 @@
-import { useState } from 'react'
-// import OnboardingSlide from '../components/onboarding/OnboardingSlide.jsx'
-// import OnboardingDots from '../components/onboarding/OnboardingDots.jsx'
+import { Link } from 'react-router-dom'
 import '../styles/HomePage1.css'
 
 function HomePage1() {
@@ -12,9 +10,9 @@ function HomePage1() {
           <h2>Plant Identifier</h2>
         </div>
 
-        <a href="/settings" class="setting-icon" target="_self">
+        <Link to="/settings" className="setting-icon">
           <img src="../src/assets/img/setting.svg" alt="setting" />
-        </a>
+        </Link>
       </header>
 
       <div className="container trans">
