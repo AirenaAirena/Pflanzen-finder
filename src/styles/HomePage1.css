@@ -1,0 +1,139 @@
+.home {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-header {
+  background-image: url('../assets/img/heder-green.svg');
+  color: white;
+  padding: 30px 20px;
+  /* border-radius: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 172px;
+}
+.home-header h1,
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.home-header h2 {
+  font-weight: normal;
+  color: #f0f0f0;
+}
+
+.setting-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.setting-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.setting-icon:hover img {
+  transform: scale(1.1);
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  background: #fff url('../assets/img/search.svg') no-repeat left 15px center /
+    20px 20px;
+}
+.search-bar input::placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.trans {
+  position: relative;
+  margin-top: -41px;
+}
+.search-bar .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.help-banner {
+  position: relative;
+  width: 100%;
+  height: 80vw;
+  margin-top: 20px;
+  background: #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background: url('../assets/img/homeHelp.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.help-banner h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.help-banner p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #d0d0d0;
+}
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  background: #2ecc71;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.disease-banner {
+  margin-top: 20px;
+  background-image: url('../assets/img/homeMask.jpg');
+  padding: 16%;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+.disease-banner h3 {
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}

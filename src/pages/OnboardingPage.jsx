@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import OnboardingSlide from '../components/onboarding/OnboardingSlide.jsx'
 import OnboardingDots from '../components/onboarding/OnboardingDots.jsx'
 import '../styles/onboarding.css'
@@ -25,22 +26,25 @@ const slides = [
 
 export default function Onboarding() {
   const [current, setCurrent] = useState(0)
+  const navigate = useNavigate()
 
   const nextSlide = () => {
     if (current < slides.length - 1) {
       setCurrent(current + 1)
     } else {
-      console.log('Go to Home page')
+      navigate('/home')
     }
   }
 
   return (
-    <div className="onboarding">
-      <OnboardingSlide data={slides[current]} />
-      <OnboardingDots total={slides.length} current={current} />
-      <button className="onboarding-btn" onClick={nextSlide}>
-        NEXT
-      </button>
+    <div className="container">
+      <div className="onboarding">
+        <OnboardingSlide data={slides[current]} />
+        <OnboardingDots total={slides.length} current={current} />
+        <button className="onboarding-btn" onClick={nextSlide}>
+          NEXT
+        </button>
+      </div>
     </div>
   )
 }
