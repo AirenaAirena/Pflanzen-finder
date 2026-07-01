@@ -42,7 +42,11 @@ function HomePage1() {
             />
             <span>Scan and Identify</span>
           </button>
-          <button className="action-btn">
+
+          <button
+            className="action-btn"
+            onClick={() => navigate('/plant-identifier')}
+          >
             <img
               src="../src/assets/img/camera.svg"
               alt="camera"
@@ -52,7 +56,10 @@ function HomePage1() {
           </button>
         </div>
 
-        <div className="disease-banner">
+        <div
+          className="disease-banner"
+          onClick={() => navigate('/identify', { state: { mode: 'disease' } })}
+        >
           <h3>Plant Disease</h3>
         </div>
       </div>

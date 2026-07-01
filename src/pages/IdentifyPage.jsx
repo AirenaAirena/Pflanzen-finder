@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import '../styles/IdentifyPage.css'
 
 export default function IdentifyPage() {
@@ -8,6 +8,8 @@ export default function IdentifyPage() {
   const [stream, setStream] = useState(null)
   const [capturedImage, setCapturedImage] = useState(null)
   const navigate = useNavigate()
+  const { state } = useLocation()
+  const mode = state?.mode
 
   // Start Camera
   const startCamera = async () => {
@@ -66,8 +68,13 @@ export default function IdentifyPage() {
         }),
       })
 
+      // console.log('Plant.id response status:', response.status)
+      // const text = await response.text()
+      // console.log('Plant.id raw response:', text)
+
       const data = await response.json()
-      navigate('/result', { state: { image: capturedImage, result: data } })
+      const destination = mode === 'disease' ? '/disease-result' : '/result'
+      navigate(destination, { state: { image: capturedImage, result: data } })
     } catch (err) {
       console.error(err)
       alert('Faild to identify plant')
