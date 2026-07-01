@@ -25,7 +25,7 @@ function HomePage1() {
             onFocus={() => navigate('/search')}
           />
         </div>
-        <div className="help-banner">
+        <div className="help-banner" onClick={() => navigate('/help')}>
           <h3>Do you need Help</h3>
           <p>Click here</p>
         </div>

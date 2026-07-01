@@ -11,6 +11,7 @@ import SearchPage from './pages/SearchPage'
 import PlantDetailPage from './pages/PlantDetailPage'
 import PlantIdentifierPage from './pages/PlantIdentifierPage'
 import PlantDiseasePage from './pages/PlantDiseasePage'
+import HelpPage from './pages/HelpPage'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/plant/:id" element={<PlantDetailPage />} />
       <Route path="/plant-identifier" element={<PlantIdentifierPage />} />
       <Route path="/disease-result" element={<PlantDiseasePage />} />
+      <Route path="/help" element={<HelpPage />} />
     </Routes>
   )
 }
