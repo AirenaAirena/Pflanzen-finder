@@ -40,19 +40,31 @@
 .settings-logo img {
   width: 120px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.settings-list {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.settings-menu {
+  list-style: none;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
 .settings-item {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  color: #6a6f7d;
+  font-size: 16px;
   cursor: pointer;
+}
+.settings-item:not(:last-child) {
+  border-bottom: 1px solid rgba(160, 155, 155, 0.2);
+}
+
+.settings-icon {
+  width: 20px;
+  height: 20px;
 }

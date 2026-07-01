@@ -1,0 +1,68 @@
+.pi-screen {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.pi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 16px;
+}
+
+.pi-card {
+  position: relative;
+  height: 96px;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.pi-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
+}
+
+.pi-card-title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.pi-card-title-right {
+  margin-right: 160px;
+  margin-left: auto;
+}
+
+.pi-card-title-left {
+  margin-left: 160px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 2.5rem 1rem;
+  color: white;
+  background-image: url('../assets/img/heder-green.svg');
+  background-size: cover;
+}
+
+.back-text {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}

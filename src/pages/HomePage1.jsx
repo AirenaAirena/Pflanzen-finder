@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../styles/HomePage1.css'
 
 function HomePage1() {
+  const navigate = useNavigate()
+
   return (
     <div className="home">
       <header className="home-header">
@@ -17,7 +19,11 @@ function HomePage1() {
 
       <div className="container trans">
         <div className="search-bar">
-          <input type="text" placeholder="Search For Plants" />
+          <input
+            type="text"
+            placeholder="Search For Plants"
+            onFocus={() => navigate('/search')}
+          />
         </div>
         <div className="help-banner">
           <h3>Do you need Help</h3>
@@ -25,7 +31,10 @@ function HomePage1() {
         </div>
 
         <div className="actions">
-          <button className="action-btn">
+          <button
+            className="action-btn"
+            onClick={() => navigate('/plant-identifier')}
+          >
             <img
               src="../src/assets/img/photo.svg"
               alt="photo"

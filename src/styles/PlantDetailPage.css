@@ -1,0 +1,33 @@
+.plant-hero {
+  position: relative;
+  height: 35vh;
+}
+
+.plant-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back-btn {
+  z-index: 2;
+
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 50%;
+}
+
+.plant-content {
+  padding: 16px;
+}
+
+.meta {
+  margin: 10px 0;
+  color: #666;
+}
+
+.desc {
+  margin-top: 12px;
+  line-height: 1.4;
+}

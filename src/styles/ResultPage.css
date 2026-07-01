@@ -1,0 +1,88 @@
+.result-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* Фото на всю ширину */
+.result-image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+
+.result-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стрелка назад поверх фото */
+.result-back-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Блок с информацией */
+.result-info {
+  padding: 20px 10px;
+}
+
+.result-info h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+/* Genus и Family в ряд */
+.result-taxonomy {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.result-taxonomy-item label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.result-taxonomy-item span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Description */
+.result-description-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.result-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.result-confidence {
+  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #16a34a;
+}
