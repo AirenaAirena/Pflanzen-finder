@@ -16,7 +16,7 @@ function HomePage1() {
         </div>
 
         <Link to="/settings" className="setting-icon">
-          <img src="../src/assets/img/setting.svg" alt="setting" />
+          <img src={settingIcon} alt="setting" />
         </Link>
       </header>
 
