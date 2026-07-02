@@ -1,33 +1,37 @@
 import { useNavigate } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
+import leaf from '../assets/img/leaf.jpg'
+import flower from '../assets/img/flower.jpg'
+import fruit from '../assets/img/fruit.jpg'
+import bark from '../assets/img/bark.jpg'
 import '../styles/PlantIdentifierPage.css'
 
 const categories = [
   {
     id: 'leaf',
     title: 'Leaf',
-    image: '/src/assets/img/leaf.jpg',
+    image: leaf,
     gradient:
       'linear-gradient(to right, rgba(52, 211, 153, 0.95) 0%, rgba(52, 211, 153, 0) 100%)',
   },
   {
     id: 'flower',
     title: 'Flower',
-    image: '/src/assets/img/flower.jpg',
+    image: flower,
     gradient:
       'linear-gradient(to left, rgba(192, 132, 252, 1) 0%, rgba(192, 132, 252, 0) 100%)',
   },
   {
     id: 'fruit',
     title: 'Fruit',
-    image: '/src/assets/img/fruit.jpg',
+    image: fruit,
     gradient:
       'linear-gradient(to right, rgba(251, 146, 60, 0.95) 0%, rgba(251, 146, 60, 0) 100%)',
   },
   {
     id: 'bark',
     title: 'Bark',
-    image: '/src/assets/img/bark.jpg',
+    image: bark,
     gradient:
       'linear-gradient(to left, rgba(30, 58, 138, 0.95) 0%, rgba(30, 58, 138, 0) 100%)',
   },
