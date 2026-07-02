@@ -1,4 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
+import settingIcon from '../assets/img/setting.svg'
+import photoIcon from '../assets/img/photo.svg'
+import cameraIcon from '../assets/img/camera.svg'
 import '../styles/HomePage1.css'
 
 function HomePage1() {
