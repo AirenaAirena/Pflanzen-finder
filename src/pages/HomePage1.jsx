@@ -39,7 +39,7 @@ function HomePage1() {
             onClick={() => navigate('/plant-identifier')}
           >
             <img
-              src="../src/assets/img/photo.svg"
+              src={settingIcon}
               alt="photo"
               className="actions-icon"
             />
@@ -51,7 +51,7 @@ function HomePage1() {
             onClick={() => navigate('/plant-identifier')}
           >
             <img
-              src="../src/assets/img/camera.svg"
+              src={cameraIcon}
               alt="camera"
               className="actions-icon"
             />
