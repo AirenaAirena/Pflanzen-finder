@@ -76,11 +76,10 @@ function PlantDetailPage() {
     <div className="plant-detail">
       {/* IMAGE HEADER */}
       <div className="plant-hero">
-        <button className="back-btn" onClick={() => navigate(-1)}>
-          ←
-        </button>
-
         <img src={plant.image} alt={plant.name} />
+        <button className="hero-back-btn" onClick={() => navigate(-1)}>
+          <img src="/src/assets/img/arrow-back.svg" alt="back" />
+        </button>
       </div>
 
       {/* CONTENT */}

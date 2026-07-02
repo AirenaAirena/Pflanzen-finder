@@ -9,13 +9,14 @@
   object-fit: cover;
 }
 
-.back-btn {
+.hero-back-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
   z-index: 2;
-
-  color: white;
+  background: none;
   border: none;
-  padding: 8px 10px;
-  border-radius: 50%;
+  cursor: pointer;
 }
 
 .plant-content {
