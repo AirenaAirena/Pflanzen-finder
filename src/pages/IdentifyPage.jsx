@@ -68,10 +68,6 @@ export default function IdentifyPage() {
         }),
       })
 
-      // console.log('Plant.id response status:', response.status)
-      // const text = await response.text()
-      // console.log('Plant.id raw response:', text)
-
       const data = await response.json()
       const destination = mode === 'disease' ? '/disease-result' : '/result'
       navigate(destination, { state: { image: capturedImage, result: data } })

@@ -1,8 +1,6 @@
-import { useEffect, useRef } from 'react'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { searchPlants } from '../api/plants'
-import { useSearchParams } from 'react-router-dom'
 import '../styles/SearchPage.css'
 
 function SearchPage() {

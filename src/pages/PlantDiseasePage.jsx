@@ -7,25 +7,20 @@ export default function PlantDiseasePage() {
   const navigate = useNavigate()
   const [diseases, setDiseases] = useState([])
   const [loading, setLoading] = useState(true)
-  const [plantName, setPlantName] = useState('')
 
   const result = state?.result
-  const image = state?.image
 
   useEffect(() => {
     const fetchDiseases = async () => {
       try {
         // Get plant name from Plant.id result
         const name = result?.suggestions?.[0]?.plant_name || 'plant'
-        setPlantName(name)
-        console.log('searching dieases for:', name)
 
         const response = await fetch(
-          `https://perenual.com/api/pest-disease-list?key=${import.meta.env.VITE_PERENUAL_API_KEY}&page=1}`,
+          `https://perenual.com/api/pest-disease-list?key=${import.meta.env.VITE_PERENUAL_API_KEY}&page=1`,
         )
         const data = await response.json()
         setDiseases(data.data || [])
-        console.log('diseases data:', data.data?.[0])
       } catch (err) {
         console.error(err)
       } finally {
