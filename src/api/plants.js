@@ -8,11 +8,11 @@ export async function searchPlants(query, { signal } = {}) {
     )
 
     if (res.status === 429) {
-      console.warn('Rate limit reached')
+      // console.warn('Rate limit reached')
       return []
     }
     if (!res.ok) {
-      console.warn(`API error: ${res.status}`)
+      // console.warn(`API error: ${res.status}`)
       throw new Error('API request failed')
     }
 
@@ -33,28 +33,7 @@ export async function searchPlants(query, { signal } = {}) {
     }))
   } catch (e) {
     if (e.name === 'AbortError') return []
-    console.error('API error:', e)
+    // console.error('API error:', e)
     throw e
   }
 }
-// export async function searchPlants(query, { signal } = {}) {
-//   await new Promise((r) => setTimeout(r, 800))
-//   return [
-//     {
-//       id: 1,
-//       name: 'Test Rose',
-//       genus: 'Rosa',
-//       family: 'Rosaceae',
-//       description: 'Description is not available.',
-//       image: 'https://via.placeholder.com/300',
-//     },
-//     {
-//       id: 2,
-//       name: 'Test Cactus',
-//       genus: 'Cactaceae',
-//       family: 'Cactaceae',
-//       description: 'Description is not available.',
-//       image: 'https://via.placeholder.com/300',
-//     },
-//   ]
-// }

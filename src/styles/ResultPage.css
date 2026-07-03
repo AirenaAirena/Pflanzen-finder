@@ -3,7 +3,6 @@
   background: #fff;
 }
 
-/* Фото на всю ширину */
 .result-image {
   position: relative;
   width: 100%;
@@ -16,7 +15,6 @@
   object-fit: cover;
 }
 
-/* Стрелка назад поверх фото */
 .result-back-btn {
   position: absolute;
   top: 50%;
@@ -33,7 +31,6 @@
   cursor: pointer;
 }
 
-/* Блок с информацией */
 .result-info {
   padding: 20px 10px;
 }
@@ -45,7 +42,6 @@
   margin-bottom: 16px;
 }
 
-/* Genus и Family в ряд */
 .result-taxonomy {
   display: flex;
   gap: 32px;
