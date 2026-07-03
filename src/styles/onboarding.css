@@ -1,16 +1,16 @@
 .onboarding {
-  height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  /* padding: 20px; */
+  padding: 20px 0;
 }
 
 .slide img {
   width: 100%;
-  max-width: 317px;
+  max-width: 260px;
 }
 .slide h2 {
   font-family: 'Poppins', sans-serif;
@@ -21,7 +21,7 @@
 .slide p {
   font-weight: 500;
   color: #6a6f7d;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .dots {
   display: flex;
