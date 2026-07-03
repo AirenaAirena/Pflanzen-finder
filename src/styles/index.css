@@ -10,8 +10,11 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  height: 100%;
+}
 body {
+  min-height: 100dvh;
   box-sizing: inherit;
   font-family: 'Poppins', sans-serif;
   background-color: #f2f3f3;

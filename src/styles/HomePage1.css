@@ -125,11 +125,17 @@ h2 {
 .disease-banner {
   margin-top: 20px;
   background-image: url('../assets/img/homeMask.jpg');
-  padding: 16%;
+  background-size: cover;
+  background-position: center;
+  padding: 24px 16px;
   border-radius: 20px;
   color: white;
   position: relative;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
 }
+
 .disease-banner h3 {
   font-size: 16px;
   font-weight: 500;
